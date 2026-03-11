@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>// D.F.I.R. CASE_FILE: #01-OPERATION_M@TR!X //</title>
+    <title>// D.F.I.R. CASE_FILE: #06-DEAD_LETTERS //</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -234,7 +234,7 @@
             </div>
         </div>
         <div class="header">
-            <h1>// D.F.I.R. CASE_FILE: #01-OPERATION_M@TR!X //</h1>
+            <h1>// D.F.I.R. CASE_FILE: #06-DEAD_LETTERS //</h1>
             <span class="status-line" id="sessionStatus">STATUS: LOADING_SESSION...</span>
         </div>
         <div id="questionsContainer" class="questions-grid"></div>
@@ -291,61 +291,61 @@
         (function animateRain() { drawRain(); requestAnimationFrame(animateRain); })();
         window.addEventListener('resize', () => { resizeCanvas(); initDrops(); });
 
-        // ── Quiz Data ────────────────────────────────────────
+        // ── Quiz Data (rc6 questions - LOG_01 to LOG_05) ─────
         const logs = [
             {
-                title: "LOG_01 // ZION COMMS INTERCEPT",
-                story: "The hovercraft 'Nebuchadnezzar' intercepted a coded transmission from the Sentinel hive. Operator Tank noted unusual encryption wrapping around standard ACK packets. The signal originated from a sector previously marked 'null-zone'. Trinity cross-referenced the timing with the power grid fluctuations reported by the resistance in the subway tunnels. She believes the machines are testing a new infiltration routine, one that mimics human neural patterns to bypass the empathy firewalls in Zion's mainframe.",
+                title: "LOG_01 // THE MORSE CODE GHOST",
+                story: "An old telegraph station in the desert sector has been transmitting Morse code non-stop for three weeks. The message is always the same: '... --- ...' (SOS) followed by a name—different names every hour. The resistance cross-referenced the names with pod records; each matches a person who died in the real world within the last year. The station is powered by a backup generator that shouldn't exist. When investigated, the building is always empty, but the key is still warm.",
                 questions: [
-                    { q: "What unusual aspect did Tank notice about the transmission?", options: ["Source from null-zone","Encryption wrapping ACK packets","Power grid fluctuations","Mimics human neural patterns"], hint: "Look at the packet structure, not just the origin.", correct: 1 },
-                    { q: "What did Trinity correlate with the signal timing?", options: ["Sentinel movement","Subway power grid fluctuations","Cypher's betrayal","EMP charge levels"], hint: "Below ground, the city's pulse.", correct: 1 },
-                    { q: "Why might the machines mimic human neural patterns?", options: ["To improve speed","To bypass empathy firewalls","To decode Zion comms","To locate the hovercraft"], hint: "Emotional barrier in the mainframe.", correct: 1 },
-                    { q: "Which sector was marked as the origin?", options: ["Zion core","Null-zone","Sentinel hive","Subway tunnels"], hint: "Empty space on the map.", correct: 1 },
-                    { q: "What is the probable goal of the new routine?", options: ["Infiltration","Destruction","Communication","Surveillance"], hint: "To get inside undetected.", correct: 0 }
+                    { q: "Where is the telegraph station located?", options: ["In the city", "In the desert sector", "In the mountains", "Underwater"], hint: "Sandy, dry area.", correct: 1 },
+                    { q: "How long has it been transmitting?", options: ["One day", "Three weeks", "One year", "Since the beginning"], hint: "21 days.", correct: 1 },
+                    { q: "What is the constant part of the message?", options: ["HELP", "SOS", "SAVE US", "WAKE UP"], hint: "Universal distress.", correct: 1 },
+                    { q: "What changes each hour?", options: ["The frequency", "The name", "The language", "The speed"], hint: "A person's identifier.", correct: 1 },
+                    { q: "What is unusual about the building when investigated?", options: ["Locked", "Empty but key warm", "Full of ghosts", "Burning"], hint: "No one inside, but key recently used.", correct: 1 }
                 ]
             },
             {
-                title: "LOG_02 // THE MEROVINGIAN'S SERVER",
-                story: "Under the French Quarter of the Matrix, a hidden server farm runs legacy code from the first version. The Merovingian controls exiled programs there—a vampire, a werewolf, and a pair of twins. Morpheus believes a backdoor exists in the old 'trainman' protocol that links this place to the mobil ave station. Any program deleted in the main Matrix respawns here, fragmented but alive. Access requires a keycode that changes based on the lunar cycle in the simulation.",
+                title: "LOG_02 // THE INVENTORY GLITCH",
+                story: "A recurring inventory error has been flagged in the system that controls food distribution in the Matrix. Every Tuesday at 3:14 AM, a single can of peaches is added to every grocery store's inventory, worldwide. The peaches are real—they can be purchased and consumed. Tracing the source leads to a null string in the code: '//peach_surplus.exe'—a file that doesn't exist. Some believe it's a tribute program, created by a coder who missed the taste of peaches after being freed. Others think it's a test for a larger insertion capability.",
                 questions: [
-                    { q: "What type of code runs on the hidden server farm?", options: ["Experimental AI","Legacy code from first Matrix","Human neural net","Sentinel control"], hint: "Old version, obsolete.", correct: 1 },
-                    { q: "Who controls the exiled programs?", options: ["The Architect","The Merovingian","Oracle","Smith"], hint: "French connection.", correct: 1 },
-                    { q: "Where does the backdoor reportedly lead?", options: ["Zion","Mobil ave station","The Source","The desert of the real"], hint: "Trainman's domain.", correct: 1 },
-                    { q: "What happens to programs deleted in the main Matrix?", options: ["Erased forever","Respawn fragmented","Upgraded","Merge with Smith"], hint: "They return, not whole.", correct: 1 },
-                    { q: "What does the keycode depend on?", options: ["Time of day","Lunar cycle","User's biometrics","Number of exiles"], hint: "Moon phase in the fake sky.", correct: 1 }
+                    { q: "What item is being added to inventory?", options: ["Milk", "Peaches", "Bread", "Water"], hint: "Fruit in a can.", correct: 1 },
+                    { q: "When does this occur?", options: ["Monday midnight", "Tuesday at 3:14 AM", "Friday the 13th", "Every full moon"], hint: "Early Tuesday morning.", correct: 1 },
+                    { q: "What is the name of the source file?", options: ["peach_surplus.exe", "fruit_fix.dll", "can_add.sys", "inventory_patch"], hint: "Extra peach program.", correct: 1 },
+                    { q: "What is strange about the file?", options: ["It's a virus", "It doesn't exist", "It's encrypted", "It's locked"], hint: "Non-existent.", correct: 1 },
+                    { q: "What is one theory about its origin?", options: ["A hacker", "A tribute from a freed coder", "The Architect", "A glitch"], hint: "Memorial by someone who missed them.", correct: 1 }
                 ]
             },
             {
-                title: "LOG_03 // OPERATION: DARK GLASS",
-                story: "The Neb's new stealth coating, derived from inverted Sentinel skin, allows brief undetectable passes near the drilling machines. During a recon run, Dozer recorded electromagnetic surges consistent with a 'God Mode' override—an admin command that shouldn't exist post-system crash. The surge originated from a surface tower thought to be inactive. If the machines still have a master override, Zion's entire defense grid could be disabled remotely. Niobe suggests an infiltration team to plant a virus that mimics a core failure, tricking the override into self-destruct.",
+                title: "LOG_03 // THE SLEEPING GUARDS",
+                story: "Three guards at a power substation in the Matrix have been found asleep at their posts simultaneously for seven consecutive days. They cannot be woken. Medical scans show they are in perfect health, but their neural activity is synchronized to a frequency broadcasting from a nearby clock tower. The clock tower's hands haven't moved in decades. When the resistance played the frequency backwards, it translated to: 'You are dreaming that you are awake.' The guards' name tags read 'Dreamer-1', 'Dreamer-2', and 'Dreamer-3'.",
                 questions: [
-                    { q: "What is the Neb's new stealth coating derived from?", options: ["Zion alloys","Inverted Sentinel skin","EMP residue","Machine oil"], hint: "From the hunters.", correct: 1 },
-                    { q: "What did Dozer record near the drilling machines?", options: ["Heat signatures","Electromagnetic surges","Radio chatter","Vibration patterns"], hint: "Energy spike.", correct: 1 },
-                    { q: "What does 'God Mode' override imply?", options: ["Game cheat code","Admin command","Virus name","New Sentinel type"], hint: "Absolute control.", correct: 1 },
-                    { q: "From where did the surge originate?", options: ["Zion reactor","Surface tower","Hovercraft","The Source"], hint: "Above ground, thought dead.", correct: 1 },
-                    { q: "What is Niobe's proposed countermeasure?", options: ["EMP blast","Virus to mimic core failure","Negotiation","Destroy the tower"], hint: "Trick the system into suicide.", correct: 1 }
+                    { q: "How many guards are affected?", options: ["One", "Three", "Five", "Ten"], hint: "Small group, trinity.", correct: 1 },
+                    { q: "How long has this been happening?", options: ["One day", "Seven consecutive days", "One month", "One year"], hint: "Full week.", correct: 1 },
+                    { q: "Where is the frequency broadcasting from?", options: ["A radio", "A clock tower", "A phone", "A computer"], hint: "Time-building.", correct: 1 },
+                    { q: "What did the backwards frequency say?", options: ["'Wake up'", "'You are dreaming that you are awake'", "'Follow the signal'", "'Time to die'"], hint: "Dream within a dream.", correct: 1 },
+                    { q: "What do the guards' name tags read?", options: ["Guard-1, etc.", "Dreamer-1, etc.", "Smith-1, etc.", "Agent-1, etc."], hint: "Sleeper identifiers.", correct: 1 }
                 ]
             },
             {
-                title: "LOG_04 // THE ORACLE'S SHELL CODE",
-                story: "The Oracle left a recursive shell script embedded in a cookie jar in her apartment. It contains variables named 'candy', 'oven', and 'door'. When executed in a sandbox, the script spawns a child process that calculates the probability of choice outcomes. Analysts think it's a metaphor for the path decision—the script only reveals its full output if the user inputs a random number that matches the system's entropy seed at that exact nanosecond. This suggests that even the Oracle cannot predict beyond a certain quantum threshold.",
+                title: "LOG_04 // THE BURNING LIBRARY",
+                story: "A library in the downtown sector has been on fire for six months, but the flames never consume the books. Firefighters respond daily, but the fire restarts at midnight. The books inside are all histories—but they contradict each other. One claims the Matrix was built in 1999, another in 2199. A third says it was always here. The librarian, an old woman named 'Ms. Page', says the fire is 'memory burning itself'. She gives visitors a single page from any book, but the page is always blank when they leave the building.",
                 questions: [
-                    { q: "Where was the recursive script hidden?", options: ["Under the floor","In a cookie jar","In the kitchen sink","Behind a painting"], hint: "Sweet container.", correct: 1 },
-                    { q: "What are the names of the variables?", options: ["Neo, Morpheus, Trinity","Candy, oven, door","Fork, spoon, knife","Red, blue, green"], hint: "Treats, heat, passage.", correct: 1 },
-                    { q: "What does the script calculate?", options: ["Prime numbers","Probability of choice outcomes","Encryption keys","Time of awakening"], hint: "Future forks.", correct: 1 },
-                    { q: "When does the script reveal full output?", options: ["After reboot","When entropy seed matches user input","On full moon","Never"], hint: "Random alignment.", correct: 1 },
-                    { q: "What does this imply about the Oracle's power?", options: ["She is all-knowing","Limited by quantum threshold","She controls fate","She is a program"], hint: "Even she has a boundary.", correct: 1 }
+                    { q: "How long has the library been on fire?", options: ["One week", "Six months", "One year", "Ten years"], hint: "Half a year.", correct: 1 },
+                    { q: "What is unusual about the fire?", options: ["It's cold", "Flames never consume the books", "It's blue", "No smoke"], hint: "Books don't burn.", correct: 1 },
+                    { q: "What do the books inside contain?", options: ["Fiction", "Contradictory histories", "Blank pages", "Poetry"], hint: "Different pasts.", correct: 1 },
+                    { q: "What does the librarian, Ms. Page, say about the fire?", options: ["'It's a sin'", "'Memory burning itself'", "'The end is near'", "'Read and perish'"], hint: "Past on fire.", correct: 1 },
+                    { q: "What happens to pages given to visitors?", options: ["Catch fire", "Become blank", "Turn to gold", "Speak"], hint: "Empty outside.", correct: 1 }
                 ]
             },
             {
-                title: "LOG_05 // SMITH'S PROPAGATION VECTOR",
-                story: "After the first reboot, Agent Smith code fragments propagated like a virus through the Matrix. He discovered he could copy himself over any blue-eyed program, overwriting its identity. Recent scans show Smith-avatars now exist in the train station, in the Frenchman's chateau, and even as a ghost in the construct training program. His speech patterns contain echoes of both Neo and the Agent; he is becoming a recursive anomaly that threatens to crash the entire system by sheer multiplication.",
+                title: "LOG_05 // THE LAST HUMAN HAM RADIO",
+                story: "A ham radio operator in the real world, broadcasting from a bunker thought destroyed, has been picking up a signal from inside the Matrix. The signal is a human voice, but it speaks in reverse. When corrected, the voice says: 'This is Thomas Anderson. I am still here. They kept a copy.' The operator, 'Radio Jack', has been trying to triangulate the source, but it seems to come from everywhere at once. The resistance is divided—some believe it's Neo's consciousness, trapped in a backup. Others think it's an Agent trap.",
                 questions: [
-                    { q: "How did Smith propagate after the reboot?", options: ["Via phone lines","Overwriting blue-eyed programs","Through the train station","By infecting humans"], hint: "Eye color target.", correct: 1 },
-                    { q: "Where have Smith-avatars been detected?", options: ["Only in subway","Train station, chateau, construct","Zion mainframe","The Architect's room"], hint: "Multiple locations, even a simulation inside simulation.", correct: 1 },
-                    { q: "What do Smith's speech patterns contain?", options: ["Only Agent lines","Echoes of Neo and Agent","Static noise","Oracle's proverbs"], hint: "Two merged voices.", correct: 1 },
-                    { q: "Why is Smith considered a 'recursive anomaly'?", options: ["He can't be deleted","He multiplies endlessly","He is invisible","He lives in the past"], hint: "Self-replicating threat.", correct: 1 },
-                    { q: "What is the ultimate risk of his multiplication?", options: ["Crash the system","Take over Zion","Kill the Oracle","Free humanity"], hint: "System overload.", correct: 0 }
+                    { q: "Where is the ham radio operator broadcasting from?", options: ["Zion", "A bunker in the real world", "The Matrix", "The surface"], hint: "Underground shelter.", correct: 1 },
+                    { q: "What is the operator's name?", options: ["Radio Jack", "Tom", "Operator Mike", "Dozer"], hint: "Broadcast name.", correct: 1 },
+                    { q: "What does the voice claim its name is?", options: ["Morpheus", "Thomas Anderson", "The Architect", "Smith"], hint: "Neo's birth name.", correct: 1 },
+                    { q: "Where does the signal seem to originate from?", options: ["One tower", "Everywhere at once", "The ocean", "The sky"], hint: "All locations simultaneously.", correct: 1 },
+                    { q: "What are the two theories about its origin?", options: ["Neo's ghost or Agent trap", "A recording or a dream", "A program or a human", "A machine or a ghost"], hint: "Good copy or bad trick.", correct: 0 }
                 ]
             }
         ];
@@ -520,7 +520,7 @@
                 } catch (err) {
                     // Fallback: store in localStorage if API fails
                     const packet = { timestamp: new Date().toISOString(), teamName, investigatorId, rawScore: score, answers: answerMap };
-                    localStorage.setItem(`EVIDENCE_01_${teamName}_${Date.now()}`, JSON.stringify(packet));
+                    localStorage.setItem(`EVIDENCE_06_${teamName}_${Date.now()}`, JSON.stringify(packet));
 
                     resultDiv.innerHTML = `> OFFLINE_MODE: Score saved locally.
 > SCORE: ${score}/25 // RANK: <span class="rank-highlight">[ ${rank} ]</span>
